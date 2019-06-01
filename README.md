@@ -78,4 +78,4 @@ Note: on this result we apply zeroing of all elements less than 50, giving us ne
 
 ## Conclusion ##
 
-As we can see, fast fourier transform allows one to easily get rid of all noises, keeping only slightly distorted original signal. In our case it also bumps function up (as seen in the last plot).
+As we can see, fast fourier transform allows one to easily get rid of all noises, keeping only slightly distorted original signal (which is cos(x)). In our case it also bumps function up (as seen in the last plot).
