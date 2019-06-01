@@ -48,7 +48,7 @@ program main
             out(i)=(0,0)
         end if
     end do
-    
+
     plan2=fftw_plan_dft_c2r_1d(n,out,in,FFTW_ESTIMATE+FFTW_UNALIGNED)
     call fftw_execute_dft_c2r(plan2, out, in)
 
@@ -65,11 +65,11 @@ program main
 
 CONTAINS
     function f(x) result(y)
-        real, parameter :: PI = 3.14159265359
-
+        IMPLICIT NONE
+            real, parameter :: PI = 3.14159265359
+        real :: rand
         real, intent(in) :: x ! input
         complex(C_DOUBLE_COMPLEX) :: y ! output
-
         y =cos(x)+rand(0)
     end function f
 end program main

@@ -1,7 +1,7 @@
 # Start of the makefile
 # Defining variables
-FC = gfortran
-FLFLAGS = -lquadmath -lm -I/usr/include/ -L/usr/lib/ -lfftw3 
+FC = ifort -std08
+FLFLAGS = -lquadmath -I/usr/include/ -L/usr/lib/ -lfftw3
 #MakeFile
 all: FFT deFFT
 
