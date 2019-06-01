@@ -3,7 +3,7 @@
 FC = gfortran
 FLFLAGS = -lfftw3 -lquadmath -lm 
 #MakeFile
-main: FFT.o
+FFT: FFT.o
 		${FC} ${FLFLAGS} -o $@ $^
 FFT.o : FFT.F90
 	    ${FC} -c $^
