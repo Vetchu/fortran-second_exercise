@@ -23,7 +23,7 @@ Second homework for Fortran university course focusing on Fast Fourier Transform
 	    ├── FFT.F90
 	    └── gnuplot.sh
 
-###Directories explained###
+Directories explained:
 
 	res/
 		contains files: example plots and results.
@@ -46,9 +46,9 @@ Second homework for Fortran university course focusing on Fast Fourier Transform
 	
 ## Results ##
 
-###1st Function:###
+Tested Function:
 
-	$x = sin(2 ∗ π ∗ t ∗ 200) + 2 ∗ sin(2 ∗ π ∗ t ∗ 400)
+	x = sin(2 ∗ π ∗ t ∗ 200) + 2 ∗ sin(2 ∗ π ∗ t ∗ 400)
 
 
 ### Plot of 1st function###
@@ -62,7 +62,7 @@ Second homework for Fortran university course focusing on Fast Fourier Transform
 Note: as we can see, most important are frequencies 200 and 400, just as we set in function.
 
 
-### Plot of second, noisy function (cosinus(x)+rand) ###
+### Plot of second, noisy function cos(x)+rand ###
 
 ![](res/plot_afterNoise.png)
 
@@ -78,4 +78,4 @@ Note: on this result we apply zeroing of all elements less than 50, giving us ne
 
 ## Conclusion ##
 
-As we can see, fast fourier transform allows   one to easily get rid of all noises, despite in our instance bumping function up (as seen in the last plot).
+As we can see, fast fourier transform allows one to easily get rid of all noises, keeping only slightly distorted original signal. In our case it also bumps function up (as seen in the last plot).
