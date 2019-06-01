@@ -1,7 +1,7 @@
 program main
       use, intrinsic :: iso_c_binding
       IMPLICIT NONE
-      include '/usr/include/fftw3.f03'
+      include 'fftw3.f03'
       integer i
       integer,parameter:: n=1024
       type(C_PTR) :: plan
