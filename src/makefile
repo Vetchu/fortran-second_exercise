@@ -1,0 +1,9 @@
+# Start of the makefile
+# Defining variables
+FC = gfortran
+FLFLAGS = -lfftw3 -lquadmath -lm 
+#MakeFile
+main: FFT.o
+		${FC} ${FLFLAGS} -o $@ $^
+FFT.o : FFT.F90
+	    ${FC} -c $^
