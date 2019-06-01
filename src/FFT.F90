@@ -2,7 +2,6 @@ program main
       use, intrinsic :: iso_c_binding
       IMPLICIT NONE
       include '/usr/include/fftw3.f03'
-!          write (*,*) "Hello World!"
       integer i
       integer,parameter:: n=1024
       type(C_PTR) :: plan
@@ -14,7 +13,7 @@ program main
       allocate(in(n))
       allocate(out(n/2+1))
 
-      open(1,file='time.dat')
+      open(1,file='res/timesignal.dat')
       do i=1,n
       t=t+dt
       in(i)=f(t)
@@ -24,7 +23,7 @@ program main
       plan = fftw_plan_dft_r2c_1d(n, in,out, FFTW_ESTIMATE+FFTW_UNALIGNED)
       call fftw_execute_dft_r2c(plan, in, out)
 
-      open(2, file = 'data1.dat')
+      open(2, file = 'res/afterFFT.dat')
 
       do i=1,n/2+1
       write(2,*) i," ",abs(out(i))
