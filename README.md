@@ -2,7 +2,8 @@
 
 Second homework for Fortran university course focusing on Fast Fourier Transform in Fortran.
 
-### Project Structure ###
+## Project Structure ##
+
 	├── makefile
 	├── README.md
 	├── res
@@ -22,24 +23,29 @@ Second homework for Fortran university course focusing on Fast Fourier Transform
 	    ├── FFT.F90
 	    └── gnuplot.sh
 
-####Directories explained####
+###Directories explained###
+
 	res/
 		contains files: example plots and results.
 	src/
 		source code inside ™.
 
-### QuickSetup ###
+## QuickSetup ##
 
 	$ https://github.com/Vetchu/fortran-second_exercise
 	$ cd fortran-second_exercise
 	$ make #to prepare binaries
 	$ make allplot #to generate data and plots
+	
 ### Make - useful bits ###
+
 	$ make clean #to clean binaries
 	$ make cleanres #to clean results
 	$ make plot #to plot results
 	$ make <File> #to prepare binary of particular File
+	
 ## Results ##
+
 ###1st Function:###
 
 	$x = sin(2 ∗ π ∗ t ∗ 200) + 2 ∗ sin(2 ∗ π ∗ t ∗ 400)
@@ -48,6 +54,7 @@ Second homework for Fortran university course focusing on Fast Fourier Transform
 ### Plot of 1st function###
 
 ![](res/plot_timesignal.png)
+
 ### Plot of 1st function FFT'd ###
 
 ![](res/plot_afterFFT.png)
