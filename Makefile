@@ -2,7 +2,7 @@
 # Defining variables
 FC = ifort -std08
 FLFLAGS = -lquadmath -I/usr/include/ -L/usr/lib/ -lfftw3
-#MakeFile
+# MakeFile
 all: FFT deFFT
 
 allplot: all
