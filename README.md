@@ -4,7 +4,7 @@ Second homework for Fortran university course focusing on Fast Fourier Transform
 
 ## Project Structure ##
 
-	├── makefile
+	├── Makefile
 	├── README.md
 	├── res
 	│   ├── afterCorrection.dat
